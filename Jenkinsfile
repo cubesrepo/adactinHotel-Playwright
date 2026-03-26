@@ -1,4 +1,6 @@
 pipeline{
+    agent any
+
     environment{
         VENV_DIR = "${WORKSPACE}/venv"
         PYTHON_BIN = "/Users/leonardacube/PycharmProjects/saucedemo-Playwright/.venv/bin/python3.14"
