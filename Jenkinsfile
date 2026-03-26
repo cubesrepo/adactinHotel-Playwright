@@ -39,7 +39,7 @@ pipeline{
                 jdk: ''
             ])
             echo "Cleaning up workspace"
-            cleanWsc()
+            cleanWs()
         }
         success{
             echo "Test passed successfully"
