@@ -32,7 +32,7 @@ pipeline{
         always{
             echo "Generating allure report"
             steps([$class: 'AllureReportPublisher',
-                results: [[path: 'reports/allure-results'],
+                results: [[path: 'reports/allure-results']],
                 includeProperties: false,
                 jdk: ''
             ])
