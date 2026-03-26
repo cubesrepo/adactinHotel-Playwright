@@ -25,7 +25,7 @@ pipeline{
             steps{
                 sh '''
                     source ${VENV_DIR}/bin/activate
-                    pytest -v --alluredir-reports/allure-results
+                    pytest -v --alluredir=reports/allure-results
                 '''
             }
         }
